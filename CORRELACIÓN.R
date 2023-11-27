@@ -6,7 +6,7 @@ genes <- EGFR[, -1]
 # Calcular la matriz de correlación de Pearson
 correlation1_matrix <- cor(genes, method = "pearson")
 
-qgraph(correlation1_matrix, layout="spring", legend=FALSE , cut=0.320)
+qgraph(correlation1_matrix, layout="spring", legend=FALSE)
 
 #### CORRELACION DE LA VIA WNT BETA CATENINA####
 genes2 <- WNT[, -1]
